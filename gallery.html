@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/profile.css" />
+
+        <link rel="shortcut icon" href="./images/ファビコン2.png" sizes="32x32" />
+
+        <title>Gallery | Minori Hanada</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="hero">
+                <!-- ハンバーガーメニュー -->
+                <div class="menu">
+                    <input
+                        type="checkbox"
+                        id="menu-toggle"
+                        aria-label="メニューを開く/閉じる"
+                        hidden
+                    />
+
+                    <label class="menu__icon" for="menu-toggle">
+                        <span class="menu__line"></span>
+                        <span class="menu__line"></span>
+                        <span class="menu__line"></span>
+                    </label>
+
+                    <nav class="menu__nav" aria-label="メインメニュー">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="profile.html" class="menu__link">PROFILE</a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="job.html" class="menu__link">JOB</a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="hobby.html" class="menu__link">HOBBY</a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="gallery.html" class="menu__link">GALLERY</a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">PORTFOLIO</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="header__title">Life is a Journey of Learning.</h1>
+
+                    <p>人生に無駄な経験はない。</p>
+                </div>
+            </header>
+        </div>
+
+        <main>
+            <!-- ==============================
+         GALLERY
+    ============================== -->
+
+            <section id="gallery">
+                <h2>My Gallery</h2>
+
+                <div class="gallery-card">
+                    <!-- 沖縄 -->
+
+                    <figure class="gallery__figure">
+                        <div class="gallery__image">
+                            <img src="images/沖縄クジラ-変換元-jpg.webp" alt="沖縄" />
+
+                            <button
+                                popovertarget="pop1"
+                                class="gallery__button"
+                                aria-label="画像を拡大"
+                            ></button>
+                        </div>
+
+                        <figcaption class="gallery__caption">沖縄</figcaption>
+                    </figure>
+
+                    <!-- 沖縄の亀 -->
+
+                    <figure class="gallery__figure">
+                        <div class="gallery__image">
+                            <img src="images/沖縄亀.webp" alt="沖縄の亀" />
+
+                            <button
+                                popovertarget="pop3"
+                                class="gallery__button"
+                                aria-label="画像を拡大"
+                            ></button>
+                        </div>
+
+                        <figcaption class="gallery__caption">沖縄の亀</figcaption>
+                    </figure>
+
+                    <!-- 洞爺湖 -->
+
+                    <figure class="gallery__figure">
+                        <div class="gallery__image">
+                            <img src="images/洞爺湖イルミ.webp" alt="洞爺湖" />
+
+                            <button
+                                popovertarget="pop10"
+                                class="gallery__button"
+                                aria-label="画像を拡大"
+                            ></button>
+                        </div>
+
+                        <figcaption class="gallery__caption">洞爺湖</figcaption>
+                    </figure>
+
+                    <!-- シンガポール -->
+
+                    <figure class="gallery__figure">
+                        <div class="gallery__image">
+                            <img src="images/シンガ変換元-png.webp" alt="シンガポール" />
+
+                            <button
+                                popovertarget="pop4"
+                                class="gallery__button"
+                                aria-label="画像を拡大"
+                            ></button>
+                        </div>
+
+                        <figcaption class="gallery__caption">シンガポール</figcaption>
+                    </figure>
+
+                    <!-- 韓国 -->
+
+                    <figure class="gallery__figure">
+                        <div class="gallery__image">
+                            <img src="images/韓国焼肉-変換元-jpg.webp" alt="韓国焼肉" />
+
+                            <button
+                                popovertarget="pop2"
+                                class="gallery__button"
+                                aria-label="画像を拡大"
+                            ></button>
+                        </div>
+
+                        <figcaption class="gallery__caption">韓国</figcaption>
+                    </figure>
+
+                    <!-- タッカンマリ -->
+
+                    <figure class="gallery__figure">
+                        <div class="gallery__image">
+                            <img src="images/タッカンマリ.webp" alt="タッカンマリ" />
+
+                            <button
+                                popovertarget="pop5"
+                                class="gallery__button"
+                                aria-label="画像を拡大"
+                            ></button>
+                        </div>
+
+                        <figcaption class="gallery__caption">タッカンマリ</figcaption>
+                    </figure>
+
+                    <!-- ハワイ ウォールアート01 -->
+
+                    <figure class="gallery__figure">
+                        <div class="gallery__image">
+                            <img src="images/ハワイ侍の絵.webp" alt="ハワイ ウォールアート" />
+
+                            <button
+                                popovertarget="pop6"
+                                class="gallery__button"
+                                aria-label="画像を拡大"
+                            ></button>
+                        </div>
+
+                        <figcaption class="gallery__caption">ハワイ ウォールアート</figcaption>
+                    </figure>
+
+                    <!-- ハワイ ウォールアート02 -->
+
+                    <figure class="gallery__figure">
+                        <div class="gallery__image">
+                            <img src="images/ハワイ宇宙の絵.webp" alt="ハワイ ウォールアート" />
+
+                            <button
+                                popovertarget="pop7"
+                                class="gallery__button"
+                                aria-label="画像を拡大"
+                            ></button>
+                        </div>
+
+                        <figcaption class="gallery__caption">ハワイ ウォールアート</figcaption>
+                    </figure>
+
+                    <!-- ハワイパンケーキ -->
+
+                    <figure class="gallery__figure">
+                        <div class="gallery__image">
+                            <img src="images/パンケーキ.webp" alt="ハワイパンケーキ" />
+
+                            <button
+                                popovertarget="pop8"
+                                class="gallery__button"
+                                aria-label="画像を拡大"
+                            ></button>
+                        </div>
+
+                        <figcaption class="gallery__caption">ハワイパンケーキ</figcaption>
+                    </figure>
+
+                    <!-- ハワイワッフル -->
+
+                    <figure class="gallery__figure">
+                        <div class="gallery__image">
+                            <img src="images/ワッフル.webp" alt="ハワイワッフル" />
+
+                            <button
+                                popovertarget="pop9"
+                                class="gallery__button"
+                                aria-label="画像を拡大"
+                            ></button>
+                        </div>
+
+                        <figcaption class="gallery__caption">ハワイワッフル</figcaption>
+                    </figure>
+                </div>
+
+                <!-- ==============================
+           POPUP
+      ============================== -->
+
+                <!-- 沖縄 -->
+
+                <figure id="pop1" class="gallery-popup" popover>
+                    <img
+                        src="images/沖縄クジラ-変換元-jpg.webp"
+                        alt="沖縄"
+                        class="gallery-popup__image"
+                    />
+
+                    <p class="gallery-popup__text">
+                        沖縄の宮古島 イムギャーマリンガーデン周辺<br />
+                        クジラ岩と呼ばれている
+                    </p>
+                </figure>
+
+                <!-- 韓国 -->
+
+                <figure id="pop2" class="gallery-popup" popover>
+                    <img
+                        src="images/韓国焼肉-変換元-jpg.webp"
+                        alt="韓国焼肉"
+                        class="gallery-popup__image"
+                    />
+
+                    <p class="gallery-popup__text">
+                        延南ソ食堂<br />
+                        韓国ソウルで有名な立ち食い焼肉
+                    </p>
+                </figure>
+
+                <!-- 沖縄の亀 -->
+
+                <figure id="pop3" class="gallery-popup" popover>
+                    <img
+                        src="images/沖縄亀.webp"
+                        alt="沖縄の亀"
+                        class="gallery-popup__image img-small"
+                    />
+
+                    <p class="gallery-popup__text">
+                        沖縄宮古島の海 新城（アラグスク）海岸<br />
+                        ウミガメが見られることで有名
+                    </p>
+                </figure>
+
+                <!-- シンガポール -->
+
+                <figure id="pop4" class="gallery-popup" popover>
+                    <img
+                        src="images/シンガ変換元-png.webp"
+                        alt="シンガポール"
+                        class="gallery-popup__image"
+                    />
+
+                    <p class="gallery-popup__text">
+                        観光地で有名な植物園<br />
+                        壮大な規模で、昼は植物園、夜はイルミネーションで楽しめる
+                    </p>
+                </figure>
+
+                <!-- タッカンマリ -->
+
+                <figure id="pop5" class="gallery-popup" popover>
+                    <img
+                        src="images/タッカンマリ.webp"
+                        alt="タッカンマリ"
+                        class="gallery-popup__image"
+                    />
+
+                    <p class="gallery-popup__text">
+                        陳玉華ハルメ元祖タッカンマリ<br />
+                        韓国で有名なタッカンマリ<br />
+                        大行列で観光客にも人気
+                    </p>
+                </figure>
+
+                <!-- ハワイ ウォールアート01 -->
+
+                <figure id="pop6" class="gallery-popup" popover>
+                    <img
+                        src="images/ハワイ侍の絵.webp"
+                        alt="ハワイ ウォールアート"
+                        class="gallery-popup__image"
+                    />
+
+                    <p class="gallery-popup__text">ハワイで有名な観光スポット</p>
+                </figure>
+
+                <!-- ハワイ ウォールアート02 -->
+
+                <figure id="pop7" class="gallery-popup" popover>
+                    <img
+                        src="images/ハワイ宇宙の絵.webp"
+                        alt="ハワイ ウォールアート"
+                        class="gallery-popup__image"
+                    />
+
+                    <p class="gallery-popup__text">ハワイで有名な観光スポット</p>
+                </figure>
+
+                <!-- ハワイパンケーキ -->
+
+                <figure id="pop8" class="gallery-popup" popover>
+                    <img
+                        src="images/パンケーキ.webp"
+                        alt="ハワイパンケーキ"
+                        class="gallery-popup__image"
+                    />
+
+                    <p class="gallery-popup__text">
+                        ハワイで有名なカフェカイラ<br />
+                        朝から行列
+                    </p>
+                </figure>
+
+                <!-- ハワイワッフル -->
+
+                <figure id="pop9" class="gallery-popup" popover>
+                    <img
+                        src="images/ワッフル.webp"
+                        alt="ハワイワッフル"
+                        class="gallery-popup__image"
+                    />
+
+                    <p class="gallery-popup__text">
+                        ハワイで有名なカフェカイラ<br />
+                        朝から行列
+                    </p>
+                </figure>
+
+                <!-- 洞爺湖 -->
+
+                <figure id="pop10" class="gallery-popup" popover>
+                    <img src="images/洞爺湖イルミ.webp" alt="洞爺湖" class="gallery-popup__image" />
+
+                    <p class="gallery-popup__text">
+                        洞爺湖<br />
+                        一定期間イルミネーションが点灯されている
+                    </p>
+                </figure>
+            </section>
+        </main>
+
+        <footer>
+            <h3>Follow Me</h3>
+
+            <div class="sns-icons">
+                <a href="https://line.me/ti/p/wyoAPZbcBC" target="_blank" rel="noopener noreferrer">
+                    <img src="images/sns/LINE_Brand_icon.svg" alt="LINE" />
+                </a>
+
+                <a
+                    href="https://www.instagram.com/minori7?igsh=MWJsbmE4NGE2M2l1Yg%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="images/sns/Instagram_Glyph_Gradient.svg" alt="Instagram" />
+                </a>
+            </div>
+
+            <p>&copy; 2026 Minori Hanada</p>
+        </footer>
+
+        <script>
+            document.body.addEventListener("touchstart", function () {}, { passive: true });
+        </script>
+    </body>
+</html>

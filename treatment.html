@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- スマホ表示に必要 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MIRAI beauty clinic</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/mirai.css" />
+    </head>
+
+    <body>
+        <!-- ヘッダー -->
+
+        <header class="header">
+            <div class="header__inner">
+                <!-- ロゴ -->
+                <a href="mirai.html" class="header__logo">
+                    <span class="header__logo-main">MIRAI</span>
+                    <span class="header__logo-sub">beauty clinic</span>
+                </a>
+
+                <!-- スマホ用ハンバーガーメニュー -->
+                <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+
+                <label for="menu-toggle" class="header__menu-button">
+                    <!-- 三本線 -->
+                    <span class="header__menu-lines">
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                    </span>
+
+                    <!-- MENUの文字 -->
+                    <span class="header__menu-text">MENU</span>
+                </label>
+
+                <!-- ナビゲーション -->
+
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">HOME</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="mirai.html" class="header__dropdown-link">ホーム</a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">TREATMENT</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="treatment.html" class="header__dropdown-link">
+                                        施術一覧
+                                    </a>
+                                    <a href="price.html" class="header__dropdown-link">
+                                        料金一覧
+                                    </a>
+                                    <a
+                                        href="treatment.html#double-eyelid"
+                                        class="header__dropdown-link"
+                                    >
+                                        二重整形
+                                    </a>
+                                    <a
+                                        href="treatment.html#under-eye"
+                                        class="header__dropdown-link"
+                                    >
+                                        クマ取り
+                                    </a>
+                                    <a href="treatment.html#lip" class="header__dropdown-link">
+                                        Cカールリップ
+                                    </a>
+                                    <a href="treatment.html#skin" class="header__dropdown-link">
+                                        美肌
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#small-face"
+                                        class="header__dropdown-link"
+                                    >
+                                        小顔
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#thread-lift"
+                                        class="header__dropdown-link"
+                                    >
+                                        糸リフト
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CASE</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="case.html" class="header__dropdown-link"> 症例写真 </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">DOCTOR</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="doctor.html" class="header__dropdown-link">
+                                        医師紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CLINIC</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="clinic.html" class="header__dropdown-link">
+                                        クリニック紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">ACCESS</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="access.html" class="header__dropdown-link">
+                                        アクセス
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item header__nav-item--reservation">
+                            <a
+                                href="reservation.html"
+                                class="header__nav-link header__nav-link--reservation"
+                            >
+                                WEB予約
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ここからトップページの内容を追加していく -->
+
+        <main class="treatment-main">
+            <!-- PAGE HERO -->
+            <section class="page-hero">
+                <div class="page-hero__image">
+                    <img
+                        src="images/treatment-hero.webp"
+                        alt="美容施術を行うクリニックスタッフ"
+                        class="page-hero__photo"
+                    />
+                </div>
+
+                <div class="page-hero__content">
+                    <h1 class="page-hero__title">TREATMENT</h1>
+
+                    <span class="page-hero__line" aria-hidden="true"></span>
+
+                    <p class="page-hero__subtitle">施術一覧</p>
+                </div>
+            </section>
+
+            <!-- CATEGORY -->
+            <section class="treatment-category">
+                <div class="treatment-category__heading">
+                    <p class="treatment-category__eyebrow">CATEGORY</p>
+                    <h2 class="treatment-category__title">カテゴリーから探す</h2>
+                </div>
+
+                <div class="treatment-category__grid">
+                    <!-- 二重整形 -->
+                    <a href="#double-eyelid" class="treatment-category__card">
+                        <div class="treatment-category__image">
+                            <img
+                                src="images/treatment-eye.webp"
+                                alt="二重整形"
+                                class="treatment-category__photo"
+                            />
+                        </div>
+                        <div class="treatment-category__content">
+                            <p class="treatment-category__english">DOUBLE EYELID</p>
+                            <h3 class="treatment-category__name">二重整形</h3>
+                        </div>
+                    </a>
+
+                    <!-- クマ取り -->
+                    <a href="#under-eye" class="treatment-category__card">
+                        <div class="treatment-category__image">
+                            <img
+                                src="images/treatment-under-eye.webp"
+                                alt="クマ取り"
+                                class="treatment-category__photo"
+                            />
+                        </div>
+                        <div class="treatment-category__content">
+                            <p class="treatment-category__english">UNDER EYE</p>
+                            <h3 class="treatment-category__name">クマ取り</h3>
+                        </div>
+                    </a>
+
+                    <!-- リップ -->
+                    <a href="#lip" class="treatment-category__card">
+                        <div class="treatment-category__image">
+                            <img
+                                src="images/treatment-rip.webp"
+                                alt="リップ"
+                                class="treatment-category__photo"
+                            />
+                        </div>
+                        <div class="treatment-category__content">
+                            <p class="treatment-category__english">LIP</p>
+                            <h3 class="treatment-category__name">リップ</h3>
+                        </div>
+                    </a>
+
+                    <!-- 美肌 -->
+                    <a href="#skin" class="treatment-category__card">
+                        <div class="treatment-category__image">
+                            <img
+                                src="images/treatment-skin.webp"
+                                alt="美肌"
+                                class="treatment-category__photo"
+                            />
+                        </div>
+                        <div class="treatment-category__content">
+                            <p class="treatment-category__english">SKIN</p>
+                            <h3 class="treatment-category__name">美肌</h3>
+                        </div>
+                    </a>
+
+                    <!-- 小顔 -->
+                    <a href="#small-face" class="treatment-category__card">
+                        <div class="treatment-category__image">
+                            <img
+                                src="images/treatment-small-face.webp"
+                                alt="小顔"
+                                class="treatment-category__photo"
+                            />
+                        </div>
+                        <div class="treatment-category__content">
+                            <p class="treatment-category__english">SMALL FACE</p>
+                            <h3 class="treatment-category__name">小顔</h3>
+                        </div>
+                    </a>
+
+                    <!-- 糸リフト -->
+                    <a href="#thread-lift" class="treatment-category__card">
+                        <div class="treatment-category__image">
+                            <img
+                                src="images/treatment-lift.webp"
+                                alt="糸リフト"
+                                class="treatment-category__photo"
+                            />
+                        </div>
+                        <div class="treatment-category__content">
+                            <p class="treatment-category__english">THREAD LIFT</p>
+                            <h3 class="treatment-category__name">糸リフト</h3>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- TREATMENT LIST -->
+            <section class="treatment-list">
+                <div class="treatment-list__heading">
+                    <p class="treatment-list__eyebrow">TREATMENT MENU</p>
+                    <h2 class="treatment-list__title">施術メニュー</h2>
+                    <p class="treatment-list__lead">
+                        お悩みやご希望に合わせて、<br />
+                        一人ひとりに適した施術をご提案します。
+                    </p>
+                </div>
+
+                <div class="treatment-list__inner">
+                    <!-- 二重整形 -->
+                    <article class="treatment-list__item" id="double-eyelid">
+                        <div class="treatment-list__image treatment-list__image--reveal">
+                            <img
+                                src="images/treatment-eye.webp"
+                                alt="二重整形の施術イメージ"
+                                class="treatment-list__photo"
+                            />
+                        </div>
+
+                        <div class="treatment-list__content treatment-list__content--reveal">
+                            <p class="treatment-list__number">01</p>
+                            <p class="treatment-list__english">DOUBLE EYELID</p>
+                            <h3 class="treatment-list__name">二重整形</h3>
+
+                            <p class="treatment-list__description">
+                                自然な二重で、理想の目元へ。 お顔全体のバランスやご希望に合わせて、
+                                自然な仕上がりをご提案します。
+                            </p>
+
+                            <ul class="treatment-list__menu">
+                                <li class="treatment-list__menu-item">2点留め</li>
+                                <li class="treatment-list__menu-item">自然癒着法</li>
+                            </ul>
+
+                            <a href="price.html#double-eyelid" class="treatment-list__link">
+                                詳細を見る
+                                <span class="treatment-list__arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- クマ取り -->
+                    <article
+                        class="treatment-list__item treatment-list__item--reverse"
+                        id="under-eye"
+                    >
+                        <div class="treatment-list__image treatment-list__image--reveal">
+                            <img
+                                src="images/treatment-under-eye.webp"
+                                alt="クマ取りの施術イメージ"
+                                class="treatment-list__photo"
+                            />
+                        </div>
+
+                        <div class="treatment-list__content treatment-list__content--reveal">
+                            <p class="treatment-list__number">02</p>
+                            <p class="treatment-list__english">UNDER EYE</p>
+                            <h3 class="treatment-list__name">クマ取り</h3>
+
+                            <p class="treatment-list__description">
+                                目の下のお悩みを整えて、明るい印象へ。 クマの状態や原因を確認し、
+                                お悩みに合った施術をご提案します。
+                            </p>
+
+                            <ul class="treatment-list__menu">
+                                <li class="treatment-list__menu-item">スタンダード</li>
+                                <li class="treatment-list__menu-item">脂肪注入併用</li>
+                            </ul>
+
+                            <a href="price.html#under-eye" class="treatment-list__link">
+                                詳細を見る
+                                <span class="treatment-list__arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- リップ -->
+                    <article class="treatment-list__item" id="lip">
+                        <div class="treatment-list__image treatment-list__image--reveal">
+                            <img
+                                src="images/treatment-rip.webp"
+                                alt="リップ施術のイメージ"
+                                class="treatment-list__photo"
+                            />
+                        </div>
+
+                        <div class="treatment-list__content treatment-list__content--reveal">
+                            <p class="treatment-list__number">03</p>
+                            <p class="treatment-list__english">LIP</p>
+                            <h3 class="treatment-list__name">リップ</h3>
+
+                            <p class="treatment-list__description">
+                                自然な立体感のある、魅力的な唇へ。
+                                唇の形やお顔とのバランスを見ながら、 理想のデザインをご提案します。
+                            </p>
+
+                            <ul class="treatment-list__menu">
+                                <li class="treatment-list__menu-item">Cカールリップ</li>
+                                <li class="treatment-list__menu-item">M字リップ</li>
+                            </ul>
+
+                            <a href="price.html#lip" class="treatment-list__link">
+                                詳細を見る
+                                <span class="treatment-list__arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 美肌 -->
+                    <article class="treatment-list__item treatment-list__item--reverse" id="skin">
+                        <div class="treatment-list__image treatment-list__image--reveal">
+                            <img
+                                src="images/treatment-skin.webp"
+                                alt="美肌施術のイメージ"
+                                class="treatment-list__photo"
+                            />
+                        </div>
+
+                        <div class="treatment-list__content treatment-list__content--reveal">
+                            <p class="treatment-list__number">04</p>
+                            <p class="treatment-list__english">SKIN</p>
+                            <h3 class="treatment-list__name">美肌</h3>
+
+                            <p class="treatment-list__description">
+                                なめらかで透明感のある素肌へ。 肌状態やお悩みに合わせて、
+                                無理のない美肌治療をご提案します。
+                            </p>
+
+                            <ul class="treatment-list__menu">
+                                <li class="treatment-list__menu-item">インモード</li>
+                                <li class="treatment-list__menu-item">ピーリング</li>
+                            </ul>
+
+                            <a href="price.html#skin" class="treatment-list__link">
+                                詳細を見る
+                                <span class="treatment-list__arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 小顔 -->
+                    <article class="treatment-list__item" id="small-face">
+                        <div class="treatment-list__image treatment-list__image--reveal">
+                            <img
+                                src="images/treatment-small-face.webp"
+                                alt="小顔施術のイメージ"
+                                class="treatment-list__photo"
+                            />
+                        </div>
+
+                        <div class="treatment-list__content treatment-list__content--reveal">
+                            <p class="treatment-list__number">05</p>
+                            <p class="treatment-list__english">SMALL FACE</p>
+                            <h3 class="treatment-list__name">小顔</h3>
+
+                            <p class="treatment-list__description">
+                                お顔のバランスを整えて、 すっきりとしたフェイスラインへ。
+                                お悩みや脂肪の付き方に合わせて施術をご提案します。
+                            </p>
+
+                            <ul class="treatment-list__menu">
+                                <li class="treatment-list__menu-item">エラボトックス</li>
+                                <li class="treatment-list__menu-item">脂肪吸引</li>
+                            </ul>
+
+                            <a href="price.html#small-face" class="treatment-list__link">
+                                詳細を見る
+                                <span class="treatment-list__arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 糸リフト -->
+                    <article
+                        class="treatment-list__item treatment-list__item--reverse"
+                        id="thread-lift"
+                    >
+                        <div class="treatment-list__image treatment-list__image--reveal">
+                            <img
+                                src="images/treatment-lift.webp"
+                                alt="糸リフトの施術イメージ"
+                                class="treatment-list__photo"
+                            />
+                        </div>
+
+                        <div class="treatment-list__content treatment-list__content--reveal">
+                            <p class="treatment-list__number">06</p>
+                            <p class="treatment-list__english">THREAD LIFT</p>
+                            <h3 class="treatment-list__name">糸リフト</h3>
+
+                            <p class="treatment-list__description">
+                                自然に引き上げて、若々しい印象へ。
+                                お顔の状態や理想の仕上がりに合わせて、
+                                糸の種類や本数をご提案します。
+                            </p>
+
+                            <ul class="treatment-list__menu">
+                                <li class="treatment-list__menu-item">糸リフト</li>
+                                <li class="treatment-list__menu-item">プラチナリフト</li>
+                            </ul>
+
+                            <a href="price.html#thread-lift" class="treatment-list__link">
+                                詳細を見る
+                                <span class="treatment-list__arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- WHY MIRAI -->
+            <section class="why-mirai">
+                <div class="why-mirai__heading">
+                    <p class="why-mirai__eyebrow">WHY MIRAI</p>
+
+                    <h2 class="why-mirai__title">MIRAIが選ばれる理由</h2>
+
+                    <p class="why-mirai__lead">
+                        一人ひとりのお悩みに寄り添い、<br />
+                        安心してご相談いただける環境を大切にしています。
+                    </p>
+                </div>
+
+                <div class="why-mirai__inner">
+                    <!-- 01 -->
+                    <article class="why-mirai__item fade-up">
+                        <p class="why-mirai__number">01</p>
+
+                        <div class="why-mirai__content">
+                            <h3 class="why-mirai__name">丁寧なカウンセリング</h3>
+
+                            <p class="why-mirai__description">
+                                お悩みやご希望を丁寧にお伺いし、
+                                一人ひとりに合った施術をご提案します。
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- 02 -->
+                    <article class="why-mirai__item fade-up">
+                        <p class="why-mirai__number">02</p>
+
+                        <div class="why-mirai__content">
+                            <h3 class="why-mirai__name">自然な仕上がり</h3>
+
+                            <p class="why-mirai__description">
+                                お顔全体のバランスを大切にし、 自然で美しい仕上がりを目指します。
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- 03 -->
+                    <article class="why-mirai__item fade-up">
+                        <p class="why-mirai__number">03</p>
+
+                        <div class="why-mirai__content">
+                            <h3 class="why-mirai__name">安心のアフターケア</h3>
+
+                            <p class="why-mirai__description">
+                                施術後も安心してお過ごしいただけるよう、
+                                丁寧なサポートを行っています。
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- 04 -->
+                    <article class="why-mirai__item fade-up">
+                        <p class="why-mirai__number">04</p>
+
+                        <div class="why-mirai__content">
+                            <h3 class="why-mirai__name">完全予約制</h3>
+
+                            <p class="why-mirai__description">
+                                落ち着いた空間でゆっくりとご相談いただけるよう、
+                                完全予約制でご案内しています。
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- ==========================
+RESERVATION
+========================== -->
+            <section class="reservation">
+                <div class="reservation__inner">
+                    <p class="reservation__eyebrow">RESERVATION</p>
+
+                    <h2 class="reservation__title">無料カウンセリング予約</h2>
+
+                    <p class="reservation__text">
+                        一人ひとりのお悩みに合わせて、<br />
+                        最適な施術をご提案いたします。<br />
+                        まずはお気軽にご相談ください。
+                    </p>
+
+                    <a href="reservation.html" class="reservation__button">
+                        WEB予約はこちら
+                        <span class="reservation__arrow">→</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <h2 class="footer__clinic-name">MIRAI beauty clinic</h2>
+
+                    <p class="footer__copy">美しさのその先へ。</p>
+                </div>
+
+                <nav class="footer__nav" aria-label="フッターナビゲーション">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="mirai.html" class="footer__link">HOME</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="treatment.html" class="footer__link">TREATMENT</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="price.html" class="footer__link">PRICE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="case.html" class="footer__link">CASE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="doctor.html" class="footer__link">DOCTOR</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="clinic.html" class="footer__link">CLINIC</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="access.html" class="footer__link">ACCESS</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="reservation.html" class="footer__link">WEB予約</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__info">
+                    <p class="footer__address">
+                        〒060-0001<br />
+                        北海道札幌市中央区○○1丁目2-3
+                    </p>
+
+                    <p class="footer__tel">TEL：011-123-4567</p>
+
+                    <p class="footer__time">診療時間 10:00〜19:00（不定休）</p>
+                </div>
+
+                <small class="footer__copyright">
+                    &copy; 2026 MIRAI beauty clinic. All Rights Reserved.
+                </small>
+            </div>
+        </footer>
+        <script src="./js/mirai.js"></script>
+    </body>
+</html>

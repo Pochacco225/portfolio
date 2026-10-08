@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- スマホ表示に必要 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MIRAI beauty clinic</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/mirai.css" />
+    </head>
+
+    <body>
+        <!-- ヘッダー -->
+
+        <header class="header">
+            <div class="header__inner">
+                <!-- ロゴ -->
+                <a href="mirai.html" class="header__logo">
+                    <span class="header__logo-main">MIRAI</span>
+                    <span class="header__logo-sub">beauty clinic</span>
+                </a>
+
+                <!-- スマホ用ハンバーガーメニュー -->
+                <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+
+                <label for="menu-toggle" class="header__menu-button">
+                    <!-- 三本線 -->
+                    <span class="header__menu-lines">
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                    </span>
+
+                    <!-- MENUの文字 -->
+                    <span class="header__menu-text">MENU</span>
+                </label>
+
+                <!-- ナビゲーション -->
+
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">HOME</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="mirai.html" class="header__dropdown-link">ホーム</a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">TREATMENT</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="treatment.html" class="header__dropdown-link">
+                                        施術一覧
+                                    </a>
+                                    <a href="price.html" class="header__dropdown-link">
+                                        料金一覧
+                                    </a>
+                                    <a
+                                        href="treatment.html#double-eyelid"
+                                        class="header__dropdown-link"
+                                    >
+                                        二重整形
+                                    </a>
+                                    <a
+                                        href="treatment.html#under-eye"
+                                        class="header__dropdown-link"
+                                    >
+                                        クマ取り
+                                    </a>
+                                    <a href="treatment.html#lip" class="header__dropdown-link">
+                                        Cカールリップ
+                                    </a>
+                                    <a href="treatment.html#skin" class="header__dropdown-link">
+                                        美肌
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#small-face"
+                                        class="header__dropdown-link"
+                                    >
+                                        小顔
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#thread-lift"
+                                        class="header__dropdown-link"
+                                    >
+                                        糸リフト
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CASE</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="case.html" class="header__dropdown-link"> 症例写真 </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">DOCTOR</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="doctor.html" class="header__dropdown-link">
+                                        医師紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CLINIC</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="clinic.html" class="header__dropdown-link">
+                                        クリニック紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">ACCESS</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="access.html" class="header__dropdown-link">
+                                        アクセス
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item header__nav-item--reservation">
+                            <a
+                                href="reservation.html"
+                                class="header__nav-link header__nav-link--reservation"
+                            >
+                                WEB予約
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ここからトップページの内容を追加していく -->
+        <main class="reservation-page-main">
+            <!-- =========================
+    RESERVATION HERO
+    ========================== -->
+            <section class="page-hero">
+                <div class="page-hero__image">
+                    <img
+                        src="images/reservation-hero.webp"
+                        alt="MIRAI beauty clinic WEB予約"
+                        class="page-hero__photo"
+                    />
+                </div>
+
+                <div class="page-hero__content">
+                    <h1 class="page-hero__title">RESERVATION</h1>
+
+                    <span class="page-hero__line" aria-hidden="true"></span>
+
+                    <p class="page-hero__subtitle">WEB予約</p>
+                </div>
+            </section>
+
+            <!-- =========================
+    RESERVATION INTRO
+    ========================== -->
+            <section class="reservation-page-intro">
+                <div class="reservation-page-intro__inner">
+                    <p class="reservation-page-intro__en">COUNSELING RESERVATION</p>
+
+                    <h2 class="reservation-page-intro__title">無料カウンセリング予約</h2>
+
+                    <p class="reservation-page-intro__text">
+                        ご希望の施術やお悩みについて、まずはお気軽にご相談ください。<br />
+                        内容を確認後、担当者よりご連絡いたします。
+                    </p>
+                </div>
+            </section>
+
+            <!-- =========================
+    RESERVATION FORM
+    ========================== -->
+            <section class="reservation-form-section">
+                <div class="reservation-form-section__inner">
+                    <div class="reservation-form-section__heading">
+                        <p class="reservation-form-section__en">RESERVATION FORM</p>
+
+                        <h2 class="reservation-form-section__title">ご予約情報</h2>
+
+                        <p class="reservation-form-section__lead">
+                            必須項目をご入力のうえ、送信ボタンを押してください。
+                        </p>
+                    </div>
+
+                    <form class="reservation-form" id="reservation-form">
+                        <!-- お名前 -->
+                        <div class="reservation-form__item">
+                            <label for="reservation-name" class="reservation-form__label">
+                                お名前
+                                <span class="reservation-form__required">必須</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="reservation-name"
+                                name="name"
+                                class="reservation-form__input"
+                                placeholder="例：花田 みのり"
+                                autocomplete="name"
+                                required
+                            />
+                        </div>
+
+                        <!-- フリガナ -->
+                        <div class="reservation-form__item">
+                            <label for="reservation-kana" class="reservation-form__label">
+                                フリガナ
+                                <span class="reservation-form__required">必須</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="reservation-kana"
+                                name="kana"
+                                class="reservation-form__input"
+                                placeholder="例：ハナダ ミノリ"
+                                required
+                            />
+                        </div>
+
+                        <!-- メールアドレス -->
+                        <div class="reservation-form__item">
+                            <label for="reservation-email" class="reservation-form__label">
+                                メールアドレス
+                                <span class="reservation-form__required">必須</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="reservation-email"
+                                name="email"
+                                class="reservation-form__input"
+                                placeholder="example@email.com"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
+
+                        <!-- 電話番号 -->
+                        <div class="reservation-form__item">
+                            <label for="reservation-tel" class="reservation-form__label">
+                                電話番号
+                                <span class="reservation-form__required">必須</span>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="reservation-tel"
+                                name="tel"
+                                class="reservation-form__input"
+                                placeholder="例：09012345678"
+                                autocomplete="tel"
+                                required
+                            />
+                        </div>
+
+                        <!-- 希望施術 -->
+                        <div class="reservation-form__item reservation-form__item--full">
+                            <label for="reservation-treatment" class="reservation-form__label">
+                                希望施術
+                                <span class="reservation-form__required">必須</span>
+                            </label>
+
+                            <select
+                                id="reservation-treatment"
+                                name="treatment"
+                                class="reservation-form__select"
+                                required
+                            >
+                                <option value="">選択してください</option>
+                                <option value="double-eyelid">二重整形</option>
+                                <option value="under-eye">クマ取り</option>
+                                <option value="lip">Cカールリップ</option>
+                                <option value="skin">美肌治療</option>
+                                <option value="small-face">小顔</option>
+                                <option value="thread-lift">糸リフト</option>
+                                <option value="other">その他・相談して決めたい</option>
+                            </select>
+                        </div>
+
+                        <!-- 希望日時見出し -->
+                        <div class="reservation-form__section-title">ご希望日時</div>
+
+                        <!-- 第一希望日 -->
+                        <div class="reservation-form__item">
+                            <label for="reservation-date-first" class="reservation-form__label">
+                                第一希望日
+                                <span class="reservation-form__required">必須</span>
+                            </label>
+
+                            <input
+                                type="date"
+                                id="reservation-date-first"
+                                name="date-first"
+                                class="reservation-form__input"
+                                required
+                            />
+                        </div>
+
+                        <!-- 第一希望時間 -->
+                        <div class="reservation-form__item">
+                            <label for="reservation-time-first" class="reservation-form__label">
+                                第一希望時間
+                                <span class="reservation-form__required">必須</span>
+                            </label>
+
+                            <select
+                                id="reservation-time-first"
+                                name="time-first"
+                                class="reservation-form__select"
+                                required
+                            >
+                                <option value="">選択してください</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+
+                        <!-- 第二希望日 -->
+                        <div class="reservation-form__item">
+                            <label for="reservation-date-second" class="reservation-form__label">
+                                第二希望日
+                                <span class="reservation-form__optional">任意</span>
+                            </label>
+
+                            <input
+                                type="date"
+                                id="reservation-date-second"
+                                name="date-second"
+                                class="reservation-form__input"
+                            />
+                        </div>
+
+                        <!-- 第二希望時間 -->
+                        <div class="reservation-form__item">
+                            <label for="reservation-time-second" class="reservation-form__label">
+                                第二希望時間
+                                <span class="reservation-form__optional">任意</span>
+                            </label>
+
+                            <select
+                                id="reservation-time-second"
+                                name="time-second"
+                                class="reservation-form__select"
+                            >
+                                <option value="">選択してください</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+
+                        <!-- 相談内容 -->
+                        <div class="reservation-form__item reservation-form__item--full">
+                            <label for="reservation-message" class="reservation-form__label">
+                                ご相談内容
+                                <span class="reservation-form__optional">任意</span>
+                            </label>
+
+                            <textarea
+                                id="reservation-message"
+                                name="message"
+                                class="reservation-form__textarea"
+                                rows="7"
+                                placeholder="お悩みやご希望、ご質問などをご入力ください。"
+                            ></textarea>
+                        </div>
+
+                        <!-- 同意 -->
+                        <div class="reservation-form__privacy">
+                            <label class="reservation-form__privacy-label">
+                                <input
+                                    type="checkbox"
+                                    name="privacy"
+                                    class="reservation-form__checkbox"
+                                    required
+                                />
+
+                                <span> 個人情報の取り扱いについて確認し、同意します。 </span>
+                            </label>
+                        </div>
+
+                        <!-- 送信ボタン -->
+                        <button type="submit" class="reservation-form__button">
+                            予約内容を送信する
+                            <span class="reservation-form__arrow" aria-hidden="true">→</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- =========================
+    RESERVATION NOTE
+    ========================== -->
+            <section class="reservation-note">
+                <div class="reservation-note__inner">
+                    <div class="reservation-note__heading">
+                        <p class="reservation-note__en">INFORMATION</p>
+
+                        <h2 class="reservation-note__title">ご予約前にご確認ください</h2>
+                    </div>
+
+                    <ul class="reservation-note__list">
+                        <li class="reservation-note__item">
+                            こちらのフォーム送信だけでは予約確定となりません。
+                        </li>
+
+                        <li class="reservation-note__item">
+                            内容を確認後、担当者より予約日時についてご連絡いたします。
+                        </li>
+
+                        <li class="reservation-note__item">
+                            ご連絡までにお時間をいただく場合があります。
+                        </li>
+
+                        <li class="reservation-note__item">
+                            当サイトは架空の美容クリニックを想定したポートフォリオ作品です。
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <h2 class="footer__clinic-name">MIRAI beauty clinic</h2>
+
+                    <p class="footer__copy">美しさのその先へ。</p>
+                </div>
+
+                <nav class="footer__nav" aria-label="フッターナビゲーション">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="mirai.html" class="footer__link">HOME</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="treatment.html" class="footer__link">TREATMENT</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="price.html" class="footer__link">PRICE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="case.html" class="footer__link">CASE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="doctor.html" class="footer__link">DOCTOR</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="clinic.html" class="footer__link">CLINIC</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="access.html" class="footer__link">ACCESS</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="reservation.html" class="footer__link">WEB予約</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__info">
+                    <p class="footer__address">
+                        〒060-0001<br />
+                        北海道札幌市中央区○○1丁目2-3
+                    </p>
+
+                    <p class="footer__tel">TEL：011-123-4567</p>
+
+                    <p class="footer__time">診療時間 10:00〜19:00（不定休）</p>
+                </div>
+
+                <small class="footer__copyright">
+                    &copy; 2026 MIRAI beauty clinic. All Rights Reserved.
+                </small>
+            </div>
+        </footer>
+        <!-- 送信完了メッセージ -->
+        <div class="reservation-toast" id="reservation-toast" role="status" aria-live="polite">
+            送信しました
+        </div>
+        <script src="./js/mirai.js"></script>
+    </body>
+</html>

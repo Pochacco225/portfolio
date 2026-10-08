@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- スマホ表示に必要 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MIRAI beauty clinic</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/mirai.css" />
+    </head>
+
+    <body>
+        <!-- ヘッダー -->
+
+        <header class="header">
+            <div class="header__inner">
+                <!-- ロゴ -->
+                <a href="mirai.html" class="header__logo">
+                    <span class="header__logo-main">MIRAI</span>
+                    <span class="header__logo-sub">beauty clinic</span>
+                </a>
+
+                <!-- スマホ用ハンバーガーメニュー -->
+                <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+
+                <label for="menu-toggle" class="header__menu-button">
+                    <!-- 三本線 -->
+                    <span class="header__menu-lines">
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                    </span>
+
+                    <!-- MENUの文字 -->
+                    <span class="header__menu-text">MENU</span>
+                </label>
+
+                <!-- ナビゲーション -->
+
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">HOME</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="mirai.html" class="header__dropdown-link">ホーム</a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">TREATMENT</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="treatment.html" class="header__dropdown-link">
+                                        施術一覧
+                                    </a>
+                                    <a href="price.html" class="header__dropdown-link">
+                                        料金一覧
+                                    </a>
+                                    <a
+                                        href="treatment.html#double-eyelid"
+                                        class="header__dropdown-link"
+                                    >
+                                        二重整形
+                                    </a>
+                                    <a
+                                        href="treatment.html#under-eye"
+                                        class="header__dropdown-link"
+                                    >
+                                        クマ取り
+                                    </a>
+                                    <a href="treatment.html#lip" class="header__dropdown-link">
+                                        Cカールリップ
+                                    </a>
+                                    <a href="treatment.html#skin" class="header__dropdown-link">
+                                        美肌
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#small-face"
+                                        class="header__dropdown-link"
+                                    >
+                                        小顔
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#thread-lift"
+                                        class="header__dropdown-link"
+                                    >
+                                        糸リフト
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CASE</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="case.html" class="header__dropdown-link"> 症例写真 </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">DOCTOR</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="doctor.html" class="header__dropdown-link">
+                                        医師紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CLINIC</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="clinic.html" class="header__dropdown-link">
+                                        クリニック紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">ACCESS</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="access.html" class="header__dropdown-link">
+                                        アクセス
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item header__nav-item--reservation">
+                            <a
+                                href="reservation.html"
+                                class="header__nav-link header__nav-link--reservation"
+                            >
+                                WEB予約
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero__image">
+                <img class="hero__photo" src="./images/hero.webp" alt="MIRAI beauty clinic" />
+            </div>
+
+            <div class="hero__content">
+                <p class="hero__sub-title">BEAUTY FOR YOUR FUTURE.</p>
+
+                <h1 class="hero__title">
+                    未来の自分を、<br />
+                    もっと好きになる。
+                </h1>
+
+                <p class="hero__text">
+                    一人ひとりの「なりたい」を大切に、<br />
+                    確かな技術とやさしさで<br />
+                    あなたの美しさを引き出します。
+                </p>
+            </div>
+        </section>
+        <!-- ここからトップページの内容を追加していく -->
+
+        <main class="main" id="home">
+            <section class="recommend">
+                <div class="recommend__inner">
+                    <h2 class="recommend__heading">RECOMMEND</h2>
+
+                    <p class="recommend__lead">当院のおすすめ</p>
+
+                    <div class="recommend__list">
+                        <a class="recommend__card" href="price.html#double-eyelid">
+                            <div class="recommend__image-wrap">
+                                <img
+                                    class="recommend__image"
+                                    src="images/recommend-1.webp"
+                                    alt="二重整形"
+                                />
+                            </div>
+                        </a>
+
+                        <a class="recommend__card" href="price.html#lip">
+                            <div class="recommend__image-wrap">
+                                <img
+                                    class="recommend__image"
+                                    src="images/recommend-2.webp"
+                                    alt="Cカールリップ"
+                                />
+                            </div>
+                        </a>
+
+                        <a class="recommend__card" href="price.html#under-eye">
+                            <div class="recommend__image-wrap">
+                                <img
+                                    class="recommend__image"
+                                    src="images/recommend-3.webp"
+                                    alt="クマ取り"
+                                />
+                            </div>
+                        </a>
+
+                        <a class="recommend__card" href="price.html#thread-lift">
+                            <div class="recommend__image-wrap">
+                                <img
+                                    class="recommend__image"
+                                    src="images/recommend-4.webp"
+                                    alt="糸リフト"
+                                />
+                            </div>
+                        </a>
+
+                        <a class="recommend__card" href="price.html#skin">
+                            <div class="recommend__image-wrap">
+                                <img
+                                    class="recommend__image"
+                                    src="images/recommend-5.webp"
+                                    alt="美肌治療"
+                                />
+                            </div>
+                        </a>
+
+                        <a class="recommend__card" href="price.html#small-face">
+                            <div class="recommend__image-wrap">
+                                <img
+                                    class="recommend__image"
+                                    src="images/recommend-6.webp"
+                                    alt="ボトックス"
+                                />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="about__inner">
+                    <div class="about__heading-wrap">
+                        <p class="about__sub-title">ABOUT US</p>
+                        <h2 class="about__title">当院について</h2>
+                    </div>
+
+                    <div class="about__body">
+                        <div class="about__image-wrap">
+                            <img
+                                class="about__image"
+                                src="images/clinic.webp"
+                                alt="MIRAI beauty clinicの院内"
+                            />
+                        </div>
+
+                        <div class="about__content">
+                            <p class="about__catch">
+                                美しさの、その先にある<br />
+                                自信と笑顔のために。
+                            </p>
+
+                            <p class="about__text">
+                                MIRAI beauty clinicは、一人ひとりの想いに寄り添い、
+                                自然な美しさを引き出すことを大切にしています。
+                                丁寧なカウンセリングと確かな技術で、
+                                安心して通える美容医療をご提供します。
+                            </p>
+
+                            <div class="about__features">
+                                <div class="about__feature">
+                                    <span class="about__number">01</span>
+
+                                    <div class="about__feature-content">
+                                        <h3 class="about__feature-title">丁寧なカウンセリング</h3>
+
+                                        <p class="about__feature-text">
+                                            お悩みやご希望をじっくり伺い、
+                                            一人ひとりに合った施術をご提案します。
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="about__feature">
+                                    <span class="about__number">02</span>
+
+                                    <div class="about__feature-content">
+                                        <h3 class="about__feature-title">自然な仕上がり</h3>
+
+                                        <p class="about__feature-text">
+                                            お顔全体のバランスを考え、
+                                            その人らしさを活かした美しさを目指します。
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="about__feature">
+                                    <span class="about__number">03</span>
+
+                                    <div class="about__feature-content">
+                                        <h3 class="about__feature-title">安心できる空間</h3>
+
+                                        <p class="about__feature-text">
+                                            初めての方にも安心してお過ごしいただける、
+                                            落ち着いた院内環境を整えています。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="about__link" href="clinic.html">
+                                クリニックについて詳しく見る
+                                <span class="about__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="doctor" id="doctor">
+                <div class="doctor__inner">
+                    <div class="doctor__heading-wrap">
+                        <p class="doctor__sub-title">DOCTOR</p>
+                        <h2 class="doctor__title">医師紹介</h2>
+                    </div>
+
+                    <div class="doctor__body">
+                        <div class="doctor__image-wrap">
+                            <img
+                                class="doctor__image"
+                                src="images/doctor.webp"
+                                alt="MIRAI beauty clinic 院長"
+                            />
+                        </div>
+
+                        <div class="doctor__content">
+                            <p class="doctor__position">MIRAI beauty clinic 院長</p>
+
+                            <h3 class="doctor__name">
+                                花田 みのり
+                                <span class="doctor__name-en">MINORI HANADA</span>
+                            </h3>
+
+                            <p class="doctor__catch">
+                                一人ひとりの想いに寄り添い、<br />
+                                自然な美しさを大切に。
+                            </p>
+
+                            <p class="doctor__text">
+                                美容医療は、外見を整えるだけではなく、
+                                自信や前向きな気持ちにつながるものだと考えています。
+                                お悩みやご希望を丁寧に伺い、
+                                一人ひとりに合った治療をご提案いたします。
+                            </p>
+
+                            <div class="doctor__profile">
+                                <div class="doctor__profile-item">
+                                    <p class="doctor__profile-label">得意な施術</p>
+
+                                    <p class="doctor__profile-text">
+                                        二重整形・クマ取り・糸リフト・注入治療
+                                    </p>
+                                </div>
+
+                                <div class="doctor__profile-item">
+                                    <p class="doctor__profile-label">大切にしていること</p>
+
+                                    <p class="doctor__profile-text">
+                                        丁寧なカウンセリングと自然な仕上がり
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a class="doctor__link" href="./doctor.html">
+                                院長について詳しく見る
+                                <span class="doctor__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq" id="faq">
+                <div class="faq__inner">
+                    <div class="faq__heading">
+                        <p class="faq__subtitle">FAQ</p>
+                        <h2 class="faq__title">よくあるご質問</h2>
+                    </div>
+
+                    <div class="faq__list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <span class="faq__q">Q.</span>
+                                カウンセリングだけでも受けられますか？
+                            </summary>
+
+                            <div class="faq__answer">
+                                <span class="faq__a">A.</span>
+                                <p>
+                                    はい、もちろん可能です。 無理な勧誘は行っておりませんので、
+                                    お気軽にご相談ください。
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <span class="faq__q">Q.</span>
+                                当日に施術を受けることはできますか？
+                            </summary>
+
+                            <div class="faq__answer">
+                                <span class="faq__a">A.</span>
+                                <p>
+                                    施術内容によっては当日施術も可能です。
+                                    医師の診察後にご案内いたします。
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <span class="faq__q">Q.</span>
+                                支払い方法を教えてください。
+                            </summary>
+
+                            <div class="faq__answer">
+                                <span class="faq__a">A.</span>
+                                <p>現金・各種クレジットカード・医療ローンに 対応しております。</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+            <section class="access" id="access">
+                <div class="access__inner">
+                    <div class="access__heading">
+                        <p class="access__subtitle">ACCESS</p>
+                        <h2 class="access__title">アクセス</h2>
+                    </div>
+
+                    <div class="access__content">
+                        <div class="access__map">
+                            <iframe
+                                class="access__map-frame"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11661.334431221474!2d141.34301416326434!3d43.055450680458115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b299d2542da75%3A0xde2a1d75ae40654e!2z5aSn6YCa6aeF!5e0!3m2!1sja!2sjp!4v1784874339079!5m2!1sja!2sjp"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                            >
+                            </iframe>
+                        </div>
+
+                        <div class="access__info">
+                            <dl class="access__list">
+                                <div class="access__item">
+                                    <dt>クリニック名</dt>
+                                    <dd>MIRAI beauty clinic</dd>
+                                </div>
+
+                                <div class="access__item">
+                                    <dt>住所</dt>
+                                    <dd>
+                                        〒060-0001<br />
+                                        北海道札幌市中央区○○1丁目2-3
+                                    </dd>
+                                </div>
+
+                                <div class="access__item">
+                                    <dt>アクセス</dt>
+                                    <dd>地下鉄大通駅 徒歩3分</dd>
+                                </div>
+
+                                <div class="access__item">
+                                    <dt>電話番号</dt>
+                                    <dd>011-123-4567</dd>
+                                </div>
+
+                                <div class="access__item">
+                                    <dt>診療時間</dt>
+                                    <dd>
+                                        10:00〜19:00<br />
+                                        不定休
+                                    </dd>
+                                </div>
+                            </dl>
+
+                            <a href="reservation.html" class="access__button"> WEB予約はこちら </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reservation">
+                <div class="reservation__inner">
+                    <p class="reservation__subtitle">RESERVATION</p>
+
+                    <h2 class="reservation__title">24時間WEB予約受付中</h2>
+
+                    <p class="reservation__text">初めての方も、お気軽にご相談ください。</p>
+
+                    <a href="reservation.html" class="reservation__button">
+                        <span>WEB予約はこちら</span>
+                        <span class="reservation__arrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <h2 class="footer__clinic-name">MIRAI beauty clinic</h2>
+
+                    <p class="footer__copy">美しさのその先へ。</p>
+                </div>
+
+                <nav class="footer__nav" aria-label="フッターナビゲーション">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#home" class="footer__link">HOME</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="treatment.html" class="footer__link">TREATMENT</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="price.html" class="footer__link">PRICE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="case.html" class="footer__link">CASE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="doctor.html" class="footer__link">DOCTOR</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="clinic.html" class="footer__link">CLINIC</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="access.html" class="footer__link">ACCESS</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="reservation.html" class="footer__link">WEB予約</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__info">
+                    <p class="footer__address">
+                        〒060-0001<br />
+                        北海道札幌市中央区○○1丁目2-3
+                    </p>
+
+                    <p class="footer__tel">TEL：011-123-4567</p>
+
+                    <p class="footer__time">診療時間 10:00〜19:00（不定休）</p>
+                </div>
+
+                <small class="footer__copyright">
+                    &copy; 2026 MIRAI beauty clinic. All Rights Reserved.
+                </small>
+            </div>
+        </footer>
+        <script src="./js/mirai.js"></script>
+    </body>
+</html>

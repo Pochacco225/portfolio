@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/profile.css" />
+
+        <link rel="shortcut icon" href="./images/ファビコン2.png" sizes="32x32" />
+
+        <title>Profile | Minori Hanada</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="hero">
+                <!-- ハンバーガーメニュー -->
+                <div class="menu">
+                    <input
+                        type="checkbox"
+                        id="menu-toggle"
+                        aria-label="メニューを開く/閉じる"
+                        hidden
+                    />
+
+                    <label class="menu__icon" for="menu-toggle">
+                        <span class="menu__line"></span>
+                        <span class="menu__line"></span>
+                        <span class="menu__line"></span>
+                    </label>
+
+                    <nav class="menu__nav" aria-label="メインメニュー">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="profile.html" class="menu__link">PROFILE</a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="job.html" class="menu__link">JOB</a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="hobby.html" class="menu__link">HOBBY</a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="gallery.html" class="menu__link">GALLERY</a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">PORTFOLIO</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="header__title">Life is a Journey of Learning.</h1>
+
+                    <p>人生に無駄な経験はない。</p>
+                </div>
+            </header>
+        </div>
+
+        <main>
+            <!-- ==============================
+         PROFILE
+    ============================== -->
+
+            <section id="profile">
+                <h2>About Me</h2>
+
+                <div class="profile-card">
+                    <img src="images/幼少期.jpg" alt="幼少期の写真" class="profile-img" />
+
+                    <h1>花田 みのり</h1>
+
+                    <p class="english-name">Minori Hanada</p>
+
+                    <div class="profile-item">
+                        <h3>出身地</h3>
+
+                        <p>北海道札幌市</p>
+                    </div>
+
+                    <div class="profile-item">
+                        <h3>経歴</h3>
+
+                        <p>
+                            陸上自衛隊<br />
+                            医療事務<br />
+                            医師事務作業補助者<br />
+                            ライバー<br />
+                            保険営業
+                        </p>
+                    </div>
+
+                    <div class="profile-item">
+                        <h3>Web・デザイン</h3>
+
+                        <p>
+                            職業訓練にてWeb制作・デザインを学びました。<br />
+                            HTML・CSSによるWebサイト制作のほか、 Illustrator・Photoshopを使用した
+                            グラフィック制作にも取り組んでいます。
+                        </p>
+                    </div>
+
+                    <div class="profile-item">
+                        <h3>趣味</h3>
+
+                        <p>グルメ巡り、旅行、スポーツ観戦、映画、ドラマ</p>
+                    </div>
+
+                    <div class="profile-item">
+                        <h3>モットー</h3>
+
+                        <p>一期一会</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h3>Follow Me</h3>
+
+            <div class="sns-icons">
+                <a href="https://line.me/ti/p/wyoAPZbcBC" target="_blank" rel="noopener noreferrer">
+                    <img src="images/sns/LINE_Brand_icon.svg" alt="LINE" />
+                </a>
+
+                <a
+                    href="https://www.instagram.com/minori7?igsh=MWJsbmE4NGE2M2l1Yg%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="images/sns/Instagram_Glyph_Gradient.svg" alt="Instagram" />
+                </a>
+            </div>
+
+            <p>&copy; 2026 Minori Hanada</p>
+        </footer>
+
+        <script>
+            document.body.addEventListener("touchstart", function () {}, { passive: true });
+        </script>
+    </body>
+</html>

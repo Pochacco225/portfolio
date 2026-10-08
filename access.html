@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- スマホ表示に必要 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MIRAI beauty clinic</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/mirai.css" />
+    </head>
+
+    <body>
+        <!-- ヘッダー -->
+
+        <header class="header">
+            <div class="header__inner">
+                <!-- ロゴ -->
+                <a href="mirai.html" class="header__logo">
+                    <span class="header__logo-main">MIRAI</span>
+                    <span class="header__logo-sub">beauty clinic</span>
+                </a>
+
+                <!-- スマホ用ハンバーガーメニュー -->
+                <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+
+                <label for="menu-toggle" class="header__menu-button">
+                    <!-- 三本線 -->
+                    <span class="header__menu-lines">
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                    </span>
+
+                    <!-- MENUの文字 -->
+                    <span class="header__menu-text">MENU</span>
+                </label>
+
+                <!-- ナビゲーション -->
+
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">HOME</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="mirai.html" class="header__dropdown-link">ホーム</a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">TREATMENT</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="treatment.html" class="header__dropdown-link">
+                                        施術一覧
+                                    </a>
+                                    <a href="price.html" class="header__dropdown-link">
+                                        料金一覧
+                                    </a>
+                                    <a
+                                        href="treatment.html#double-eyelid"
+                                        class="header__dropdown-link"
+                                    >
+                                        二重整形
+                                    </a>
+                                    <a
+                                        href="treatment.html#under-eye"
+                                        class="header__dropdown-link"
+                                    >
+                                        クマ取り
+                                    </a>
+                                    <a href="treatment.html#lip" class="header__dropdown-link">
+                                        Cカールリップ
+                                    </a>
+                                    <a href="treatment.html#skin" class="header__dropdown-link">
+                                        美肌
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#small-face"
+                                        class="header__dropdown-link"
+                                    >
+                                        小顔
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#thread-lift"
+                                        class="header__dropdown-link"
+                                    >
+                                        糸リフト
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CASE</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="case.html" class="header__dropdown-link"> 症例写真 </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">DOCTOR</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="doctor.html" class="header__dropdown-link">
+                                        医師紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CLINIC</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="clinic.html" class="header__dropdown-link">
+                                        クリニック紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">ACCESS</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="access.html" class="header__dropdown-link">
+                                        アクセス
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item header__nav-item--reservation">
+                            <a
+                                href="reservation.html"
+                                class="header__nav-link header__nav-link--reservation"
+                            >
+                                WEB予約
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ここからトップページの内容を追加していく -->
+        <main class="access-main">
+            <!-- =========================
+ACCESS HERO
+========================== -->
+            <section class="page-hero">
+                <div class="page-hero__image">
+                    <img
+                        src="images/access-hero.webp"
+                        alt="MIRAI beauty clinic アクセス"
+                        class="page-hero__photo"
+                    />
+                </div>
+
+                <div class="page-hero__content">
+                    <h1 class="page-hero__title">ACCESS</h1>
+
+                    <span class="page-hero__line" aria-hidden="true"></span>
+
+                    <p class="page-hero__subtitle">アクセス</p>
+                </div>
+            </section>
+
+            <!-- =========================
+ACCESS INTRO
+========================== -->
+            <section class="access-intro">
+                <div class="access-intro__inner">
+                    <div class="access-intro__heading">
+                        <p class="access-intro__en">ACCESS INFO</p>
+
+                        <h2 class="access-intro__title">通いやすさも、安心のひとつ</h2>
+                    </div>
+
+                    <div class="access-intro__content">
+                        <p class="access-intro__text">
+                            MIRAI beauty clinicは大通駅から徒歩3分。
+                            お仕事帰りやお買い物の合間にも、気軽にお立ち寄りいただけます。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="access" id="access">
+                <div class="access__inner">
+                    <div class="access__heading">
+                        <p class="access__subtitle">ACCESS</p>
+                        <h2 class="access__title">アクセス</h2>
+                    </div>
+
+                    <div class="access__content">
+                        <div class="access__map">
+                            <iframe
+                                class="access__map-frame"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11661.334431221474!2d141.34301416326434!3d43.055450680458115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b299d2542da75%3A0xde2a1d75ae40654e!2z5aSn6YCa6aeF!5e0!3m2!1sja!2sjp!4v1784874339079!5m2!1sja!2sjp"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                            >
+                            </iframe>
+                        </div>
+
+                        <div class="access__info">
+                            <dl class="access__list">
+                                <div class="access__item">
+                                    <dt>クリニック名</dt>
+                                    <dd>MIRAI beauty clinic</dd>
+                                </div>
+
+                                <div class="access__item">
+                                    <dt>住所</dt>
+                                    <dd>
+                                        〒060-0001<br />
+                                        北海道札幌市中央区○○1丁目2-3
+                                    </dd>
+                                </div>
+
+                                <div class="access__item">
+                                    <dt>アクセス</dt>
+                                    <dd>地下鉄大通駅 徒歩3分</dd>
+                                </div>
+
+                                <div class="access__item">
+                                    <dt>電話番号</dt>
+                                    <dd>011-123-4567</dd>
+                                </div>
+
+                                <div class="access__item">
+                                    <dt>診療時間</dt>
+                                    <dd>
+                                        10:00〜19:00<br />
+                                        不定休
+                                    </dd>
+                                </div>
+                            </dl>
+
+                            <a href="reservation.html" class="access__button"> WEB予約はこちら </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =========================
+ACCESS GUIDE
+========================== -->
+            <section class="access-guide">
+                <div class="access-guide__inner">
+                    <div class="access-guide__heading">
+                        <p class="access-guide__en">ACCESS GUIDE</p>
+
+                        <h2 class="access-guide__title">ご来院方法</h2>
+                    </div>
+
+                    <div class="access-guide__list">
+                        <article class="access-guide__item">
+                            <div class="access-guide__header">
+                                <p class="access-guide__number">01</p>
+
+                                <h3 class="access-guide__subtitle">電車でお越しの方</h3>
+                            </div>
+
+                            <p class="access-guide__text">
+                                大通駅より徒歩3分。 アクセスしやすい立地です。
+                            </p>
+                        </article>
+
+                        <article class="access-guide__item">
+                            <div class="access-guide__header">
+                                <p class="access-guide__number">02</p>
+
+                                <h3 class="access-guide__subtitle">お車でお越しの方</h3>
+                            </div>
+
+                            <p class="access-guide__text">
+                                近隣のコインパーキングを ご利用ください。
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================
+RESERVATION
+========================== -->
+            <section class="reservation">
+                <div class="reservation__inner">
+                    <p class="reservation__eyebrow">RESERVATION</p>
+
+                    <h2 class="reservation__title">無料カウンセリング予約</h2>
+
+                    <p class="reservation__text">
+                        一人ひとりのお悩みに合わせて、<br />
+                        最適な施術をご提案いたします。<br />
+                        まずはお気軽にご相談ください。
+                    </p>
+
+                    <a href="reservation.html" class="reservation__button">
+                        WEB予約はこちら
+                        <span class="reservation__arrow">→</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <h2 class="footer__clinic-name">MIRAI beauty clinic</h2>
+
+                    <p class="footer__copy">美しさのその先へ。</p>
+                </div>
+
+                <nav class="footer__nav" aria-label="フッターナビゲーション">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="mirai.html" class="footer__link">HOME</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="treatment.html" class="footer__link">TREATMENT</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="price.html" class="footer__link">PRICE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="case.html" class="footer__link">CASE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="doctor.html" class="footer__link">DOCTOR</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="clinic.html" class="footer__link">CLINIC</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="access.html" class="footer__link">ACCESS</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="reservation.html" class="footer__link">WEB予約</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__info">
+                    <p class="footer__address">
+                        〒060-0001<br />
+                        北海道札幌市中央区○○1丁目2-3
+                    </p>
+
+                    <p class="footer__tel">TEL：011-123-4567</p>
+
+                    <p class="footer__time">診療時間 10:00〜19:00（不定休）</p>
+                </div>
+
+                <small class="footer__copyright">
+                    &copy; 2026 MIRAI beauty clinic. All Rights Reserved.
+                </small>
+            </div>
+        </footer>
+        <script src="./js/mirai.js"></script>
+    </body>
+</html>

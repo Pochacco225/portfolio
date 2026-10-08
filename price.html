@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- スマホ表示に必要 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MIRAI beauty clinic</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/mirai.css" />
+    </head>
+
+    <body>
+        <!-- ヘッダー -->
+
+        <header class="header">
+            <div class="header__inner">
+                <!-- ロゴ -->
+                <a href="mirai.html" class="header__logo">
+                    <span class="header__logo-main">MIRAI</span>
+                    <span class="header__logo-sub">beauty clinic</span>
+                </a>
+
+                <!-- スマホ用ハンバーガーメニュー -->
+                <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+
+                <label for="menu-toggle" class="header__menu-button">
+                    <!-- 三本線 -->
+                    <span class="header__menu-lines">
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                    </span>
+
+                    <!-- MENUの文字 -->
+                    <span class="header__menu-text">MENU</span>
+                </label>
+
+                <!-- ナビゲーション -->
+
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">HOME</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="mirai.html" class="header__dropdown-link">ホーム</a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">TREATMENT</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="treatment.html" class="header__dropdown-link">
+                                        施術一覧
+                                    </a>
+                                    <a href="price.html" class="header__dropdown-link">
+                                        料金一覧
+                                    </a>
+                                    <a
+                                        href="treatment.html#double-eyelid"
+                                        class="header__dropdown-link"
+                                    >
+                                        二重整形
+                                    </a>
+                                    <a
+                                        href="treatment.html#under-eye"
+                                        class="header__dropdown-link"
+                                    >
+                                        クマ取り
+                                    </a>
+                                    <a href="treatment.html#lip" class="header__dropdown-link">
+                                        Cカールリップ
+                                    </a>
+                                    <a href="treatment.html#skin" class="header__dropdown-link">
+                                        美肌
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#small-face"
+                                        class="header__dropdown-link"
+                                    >
+                                        小顔
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#thread-lift"
+                                        class="header__dropdown-link"
+                                    >
+                                        糸リフト
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CASE</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="case.html" class="header__dropdown-link"> 症例写真 </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">DOCTOR</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="doctor.html" class="header__dropdown-link">
+                                        医師紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CLINIC</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="clinic.html" class="header__dropdown-link">
+                                        クリニック紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">ACCESS</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="access.html" class="header__dropdown-link">
+                                        アクセス
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item header__nav-item--reservation">
+                            <a
+                                href="reservation.html"
+                                class="header__nav-link header__nav-link--reservation"
+                            >
+                                WEB予約
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ここからトップページの内容を追加していく -->
+        <main class="price-main">
+            <!-- =========================
+    PRICE HERO
+    ========================== -->
+            <section class="page-hero">
+                <div class="page-hero__image">
+                    <img
+                        src="images/treatment-hero.webp"
+                        alt="MIRAI beauty clinic 料金一覧"
+                        class="page-hero__photo"
+                    />
+                </div>
+
+                <div class="page-hero__content">
+                    <h1 class="page-hero__title">PRICE</h1>
+
+                    <span class="page-hero__line" aria-hidden="true"></span>
+
+                    <p class="page-hero__subtitle">料金一覧</p>
+                </div>
+            </section>
+
+            <!-- =========================
+    PRICE INTRO
+    ========================== -->
+            <section class="price-intro">
+                <div class="price-intro__inner">
+                    <p class="price-intro__en">PRICE LIST</p>
+
+                    <h2 class="price-intro__title">分かりやすく、安心できる料金案内</h2>
+
+                    <p class="price-intro__text">
+                        MIRAI beauty clinicでは、施術前に料金を分かりやすくご案内し、
+                        ご納得いただいたうえで施術を行います。
+                    </p>
+                </div>
+            </section>
+
+            <!-- =========================
+    PRICE NAVIGATION
+    ========================== -->
+            <nav class="price-nav" aria-label="料金カテゴリー">
+                <div class="price-nav__inner">
+                    <a href="#double-eyelid" class="price-nav__link">二重整形</a>
+                    <a href="#under-eye" class="price-nav__link">クマ取り</a>
+                    <a href="#lip" class="price-nav__link">リップ</a>
+                    <a href="#skin" class="price-nav__link">美肌</a>
+                    <a href="#small-face" class="price-nav__link">小顔</a>
+                    <a href="#thread-lift" class="price-nav__link">糸リフト</a>
+                </div>
+            </nav>
+
+            <!-- =========================
+    PRICE LIST
+    ========================== -->
+            <!-- =========================
+PRICE LIST
+========================== -->
+            <section class="price-list">
+                <div class="price-list__inner">
+                    <!-- =========================
+        01 二重整形
+        ========================== -->
+                    <article class="price-list__section" id="double-eyelid">
+                        <div class="price-list__heading">
+                            <p class="price-list__number">01</p>
+
+                            <div>
+                                <p class="price-list__en">DOUBLE EYELID</p>
+                                <h2 class="price-list__title">二重整形</h2>
+                            </div>
+                        </div>
+
+                        <div class="price-list__table">
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">埋没法 2点留め</h3>
+                                    <p class="price-list__description">
+                                        2点で固定し、自然な二重ラインを目指す基本的な施術です。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥40,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">埋没法 3点留め</h3>
+                                    <p class="price-list__description">
+                                        3点で固定し、安定した二重ラインを目指します。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥60,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">自然癒着法</h3>
+                                    <p class="price-list__description">
+                                        自然な仕上がりとラインの安定感を重視した施術です。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥150,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">埋没法 プレミアム</h3>
+                                    <p class="price-list__description">
+                                        デザイン性と持続性を重視した上位プランです。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥198,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- =========================
+        02 クマ取り
+        ========================== -->
+                    <article class="price-list__section" id="under-eye">
+                        <div class="price-list__heading">
+                            <p class="price-list__number">02</p>
+
+                            <div>
+                                <p class="price-list__en">UNDER EYE</p>
+                                <h2 class="price-list__title">クマ取り</h2>
+                            </div>
+                        </div>
+
+                        <div class="price-list__table">
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">目の下の脂肪除去</h3>
+                                    <p class="price-list__description">
+                                        目の下のふくらみの原因となる脂肪へアプローチします。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥98,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">クマ取り スタンダード</h3>
+                                    <p class="price-list__description">
+                                        目の下の状態に合わせた基本的なクマ取り施術です。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <small>モニター価格</small>
+                                    <span>¥80,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">脂肪注入併用</h3>
+                                    <p class="price-list__description">
+                                        目の下のくぼみや影も同時に整えたい方に。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <small>モニター価格</small>
+                                    <span>¥180,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">クマ取り プレミアム</h3>
+                                    <p class="price-list__description">
+                                        目元全体のバランスを考慮した上位プランです。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥250,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- =========================
+        03 Cカールリップ
+        ========================== -->
+                    <article class="price-list__section" id="lip">
+                        <div class="price-list__heading">
+                            <p class="price-list__number">03</p>
+
+                            <div>
+                                <p class="price-list__en">LIP</p>
+                                <h2 class="price-list__title">Cカールリップ</h2>
+                            </div>
+                        </div>
+
+                        <div class="price-list__table">
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">ヒアルロン酸注入</h3>
+                                    <p class="price-list__description">
+                                        唇に自然な立体感とボリュームを与えます。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥30,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">ボリフト 1cc</h3>
+                                    <p class="price-list__description">
+                                        持続性と柔らかな仕上がりを重視した製剤です。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <small>モニター価格</small>
+                                    <span>¥50,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">唇＋口角ヒアルロン酸</h3>
+                                    <p class="price-list__description">
+                                        唇の形と口角のバランスをまとめて整えます。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥78,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">人中短縮デザイン</h3>
+                                    <p class="price-list__description">
+                                        上唇の形を整え、人中を短く見せるデザインです。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥120,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- =========================
+        04 美肌治療
+        ========================== -->
+                    <article class="price-list__section" id="skin">
+                        <div class="price-list__heading">
+                            <p class="price-list__number">04</p>
+
+                            <div>
+                                <p class="price-list__en">SKIN</p>
+                                <h2 class="price-list__title">美肌治療</h2>
+                            </div>
+                        </div>
+
+                        <div class="price-list__table">
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">フォトフェイシャル</h3>
+                                    <p class="price-list__description">
+                                        光を照射し、くすみや色むらへアプローチします。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥18,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">ピコトーニング</h3>
+                                    <p class="price-list__description">
+                                        肌全体の透明感を高めたい方におすすめです。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥15,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">ダーマペン</h3>
+                                    <p class="price-list__description">
+                                        毛穴や肌の凹凸が気になる方におすすめです。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥22,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">水光注射</h3>
+                                    <p class="price-list__description">
+                                        肌にうるおいとツヤを与える注入治療です。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥28,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- =========================
+        05 小顔
+        ========================== -->
+                    <article class="price-list__section" id="small-face">
+                        <div class="price-list__heading">
+                            <p class="price-list__number">05</p>
+
+                            <div>
+                                <p class="price-list__en">FACE LINE</p>
+                                <h2 class="price-list__title">小顔</h2>
+                            </div>
+                        </div>
+
+                        <div class="price-list__table">
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">エラボトックス</h3>
+                                    <p class="price-list__description">
+                                        エラの張りを抑え、すっきりした輪郭を目指します。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥10,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">顎下脂肪吸引</h3>
+                                    <p class="price-list__description">
+                                        顎下の脂肪へアプローチし、輪郭を整えます。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥198,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">頬脂肪吸引</h3>
+                                    <p class="price-list__description">
+                                        頬の脂肪を整え、すっきりした印象を目指します。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥220,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">インモード</h3>
+                                    <p class="price-list__description">
+                                        頬や顎下を引き締め、フェイスラインを整えます。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥25,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- =========================
+        06 糸リフト
+        ========================== -->
+                    <article class="price-list__section" id="thread-lift">
+                        <div class="price-list__heading">
+                            <p class="price-list__number">06</p>
+
+                            <div>
+                                <p class="price-list__en">THREAD LIFT</p>
+                                <h2 class="price-list__title">糸リフト</h2>
+                            </div>
+                        </div>
+
+                        <div class="price-list__table">
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">MIRAIリフト 4本</h3>
+                                    <p class="price-list__description">
+                                        フェイスラインを自然に整えたい方に。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥88,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">MIRAIリフト 6本</h3>
+                                    <p class="price-list__description">
+                                        頬からフェイスラインまで整えたい方に。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥132,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">プラチナリフト 6本</h3>
+                                    <p class="price-list__description">
+                                        より高い引き上げ効果を求める方に。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥228,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+
+                            <div class="price-list__row">
+                                <div class="price-list__menu">
+                                    <h3 class="price-list__name">プラチナリフト 8本</h3>
+                                    <p class="price-list__description">
+                                        お顔全体の引き上げを重視したプランです。
+                                    </p>
+                                </div>
+
+                                <p class="price-list__price">
+                                    <span>¥298,000</span>
+                                    <small>税込</small>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 注意事項 -->
+                    <div class="price-list__note">
+                        <p>※表示価格はすべて税込です。</p>
+
+                        <p>※診察内容や使用する製剤、施術範囲によって料金が異なる場合があります。</p>
+
+                        <p>
+                            ※モニター価格には適用条件があります。詳細はカウンセリング時にご案内します。
+                        </p>
+
+                        <p>※当サイトは架空の美容クリニックを想定したポートフォリオ作品です。</p>
+                    </div>
+                </div>
+            </section>
+            <!-- =========================
+    RESERVATION
+    ========================== -->
+            <section class="reservation" id="reservation">
+                <div class="reservation__inner">
+                    <p class="reservation__eyebrow">RESERVATION</p>
+
+                    <h2 class="reservation__title">無料カウンセリング予約</h2>
+
+                    <p class="reservation__text">
+                        一人ひとりのお悩みに合わせて、<br />
+                        最適な施術をご提案いたします。<br />
+                        まずはお気軽にご相談ください。
+                    </p>
+
+                    <a href="reservation.html" class="reservation__button">
+                        WEB予約はこちら
+                        <span class="reservation__arrow">→</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <h2 class="footer__clinic-name">MIRAI beauty clinic</h2>
+
+                    <p class="footer__copy">美しさのその先へ。</p>
+                </div>
+
+                <nav class="footer__nav" aria-label="フッターナビゲーション">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="mirai.html" class="footer__link">HOME</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="treatment.html" class="footer__link">TREATMENT</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="price.html" class="footer__link">PRICE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="case.html" class="footer__link">CASE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="doctor.html" class="footer__link">DOCTOR</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="clinic.html" class="footer__link">CLINIC</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="access.html" class="footer__link">ACCESS</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="reservation.html" class="footer__link">WEB予約</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__info">
+                    <p class="footer__address">
+                        〒060-0001<br />
+                        北海道札幌市中央区○○1丁目2-3
+                    </p>
+
+                    <p class="footer__tel">TEL：011-123-4567</p>
+
+                    <p class="footer__time">診療時間 10:00〜19:00（不定休）</p>
+                </div>
+
+                <small class="footer__copyright">
+                    &copy; 2026 MIRAI beauty clinic. All Rights Reserved.
+                </small>
+            </div>
+        </footer>
+        <script src="./js/mirai.js"></script>
+    </body>
+</html>

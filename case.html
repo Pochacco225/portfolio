@@ -1,0 +1,1057 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- スマホ表示に必要 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MIRAI beauty clinic</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/mirai.css" />
+    </head>
+
+    <body>
+        <!-- ヘッダー -->
+
+        <header class="header">
+            <div class="header__inner">
+                <!-- ロゴ -->
+                <a href="mirai.html" class="header__logo">
+                    <span class="header__logo-main">MIRAI</span>
+                    <span class="header__logo-sub">beauty clinic</span>
+                </a>
+
+                <!-- スマホ用ハンバーガーメニュー -->
+                <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+
+                <label for="menu-toggle" class="header__menu-button">
+                    <!-- 三本線 -->
+                    <span class="header__menu-lines">
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                        <span class="header__menu-line"></span>
+                    </span>
+
+                    <!-- MENUの文字 -->
+                    <span class="header__menu-text">MENU</span>
+                </label>
+
+                <!-- ナビゲーション -->
+
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">HOME</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="mirai.html" class="header__dropdown-link">ホーム</a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">TREATMENT</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="treatment.html" class="header__dropdown-link">
+                                        施術一覧
+                                    </a>
+                                    <a href="price.html" class="header__dropdown-link">
+                                        料金一覧
+                                    </a>
+                                    <a
+                                        href="treatment.html#double-eyelid"
+                                        class="header__dropdown-link"
+                                    >
+                                        二重整形
+                                    </a>
+                                    <a
+                                        href="treatment.html#under-eye"
+                                        class="header__dropdown-link"
+                                    >
+                                        クマ取り
+                                    </a>
+                                    <a href="treatment.html#lip" class="header__dropdown-link">
+                                        Cカールリップ
+                                    </a>
+                                    <a href="treatment.html#skin" class="header__dropdown-link">
+                                        美肌
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#small-face"
+                                        class="header__dropdown-link"
+                                    >
+                                        小顔
+                                    </a>
+
+                                    <a
+                                        href="treatment.html#thread-lift"
+                                        class="header__dropdown-link"
+                                    >
+                                        糸リフト
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CASE</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="case.html" class="header__dropdown-link"> 症例写真 </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">DOCTOR</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="doctor.html" class="header__dropdown-link">
+                                        医師紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">CLINIC</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="clinic.html" class="header__dropdown-link">
+                                        クリニック紹介
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item">
+                            <details class="header__dropdown">
+                                <summary class="header__nav-link">ACCESS</summary>
+                                <div class="header__dropdown-content">
+                                    <a href="access.html" class="header__dropdown-link">
+                                        アクセス
+                                    </a>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="header__nav-item header__nav-item--reservation">
+                            <a
+                                href="reservation.html"
+                                class="header__nav-link header__nav-link--reservation"
+                            >
+                                WEB予約
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ここからトップページの内容を追加していく -->
+
+        <main class="case-main">
+            <!-- PAGE HERO -->
+            <section class="page-hero">
+                <div class="page-hero__image">
+                    <img
+                        src="images/case-hero.webp"
+                        alt="美容クリニックの症例紹介"
+                        class="page-hero__photo"
+                    />
+                </div>
+
+                <div class="page-hero__content">
+                    <h1 class="page-hero__title">CASE</h1>
+
+                    <span class="page-hero__line" aria-hidden="true"></span>
+
+                    <p class="page-hero__subtitle">症例紹介</p>
+                </div>
+            </section>
+            <!-- ==========================
+CASE CATEGORY LIST
+========================== -->
+
+            <div class="case-results">
+                <section class="case-category">
+                    <div class="case-category__inner">
+                        <div class="case-category__heading">
+                            <p class="case-category__eyebrow">CASE CATEGORY</p>
+
+                            <h2 class="case-category__title">症例カテゴリー</h2>
+
+                            <p class="case-category__lead">
+                                気になる施術の症例をご覧いただけます。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 固定するカテゴリーボタン -->
+                <div class="case-category__nav">
+                    <!-- ALL -->
+                    <div class="case-category__all">
+                        <button
+                            type="button"
+                            class="case-category__button case-category__button--active"
+                            data-category="all"
+                        >
+                            <span class="case-category__english">ALL</span>
+                            <span class="case-category__japanese">すべて</span>
+                        </button>
+                    </div>
+
+                    <!-- CATEGORY LIST -->
+                    <div class="case-category__list">
+                        <button type="button" class="case-category__button" data-category="eye">
+                            <span class="case-category__english">EYE</span>
+                            <span class="case-category__japanese">二重整形</span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="case-category__button"
+                            data-category="under-eye"
+                        >
+                            <span class="case-category__english">UNDER EYE</span>
+                            <span class="case-category__japanese">クマ取り</span>
+                        </button>
+
+                        <button type="button" class="case-category__button" data-category="lip">
+                            <span class="case-category__english">LIP</span>
+                            <span class="case-category__japanese">Cカールリップ</span>
+                        </button>
+
+                        <button type="button" class="case-category__button" data-category="skin">
+                            <span class="case-category__english">SKIN</span>
+                            <span class="case-category__japanese">美肌治療</span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="case-category__button"
+                            data-category="face-line"
+                        >
+                            <span class="case-category__english">FACE LINE</span>
+                            <span class="case-category__japanese">小顔</span>
+                        </button>
+
+                        <button type="button" class="case-category__button" data-category="lift">
+                            <span class="case-category__english">LIFT</span>
+                            <span class="case-category__japanese">糸リフト</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ==========================
+            CASE GALLERY
+            ========================== -->
+                <section class="case-gallery" id="case-gallery">
+                    <div class="case-gallery__inner">
+                        <div class="case-gallery__heading">
+                            <p class="case-gallery__eyebrow">CASE GALLERY</p>
+
+                            <h2 class="case-gallery__title">症例一覧</h2>
+
+                            <p class="case-gallery__lead">
+                                MIRAI beauty clinicの症例をご紹介します。
+                            </p>
+                        </div>
+
+                        <div class="case-gallery__list">
+                            <!-- ==========================
+                        EYE 二重整形
+                        ========================== -->
+
+                            <article class="case-gallery__card" data-category="eye">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-eye-01-before.webp"
+                                            alt="埋没法2点留めの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-eye-01-after.webp"
+                                            alt="埋没法2点留めの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">EYE</p>
+                                    <h3 class="case-gallery__name">二重整形</h3>
+                                    <p class="case-gallery__treatment">埋没法 2点留め</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="eye">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-eye-02-before.webp"
+                                            alt="埋没法3点留めの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-eye-02-after.webp"
+                                            alt="埋没法3点留めの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">EYE</p>
+                                    <h3 class="case-gallery__name">二重整形</h3>
+                                    <p class="case-gallery__treatment">埋没法 3点留め</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="eye">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-eye-03-before.webp"
+                                            alt="自然癒着法の施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-eye-03-after.webp"
+                                            alt="自然癒着法の施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">EYE</p>
+                                    <h3 class="case-gallery__name">二重整形</h3>
+                                    <p class="case-gallery__treatment">自然癒着法</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="eye">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-eye-04-before.webp"
+                                            alt="埋没法プレミアムの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-eye-04-after.webp"
+                                            alt="埋没法プレミアムの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">EYE</p>
+                                    <h3 class="case-gallery__name">二重整形</h3>
+                                    <p class="case-gallery__treatment">埋没法 プレミアム</p>
+                                </div>
+                            </article>
+
+                            <!-- ==========================
+                        UNDER EYE クマ取り
+                        ========================== -->
+
+                            <article class="case-gallery__card" data-category="under-eye">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-under-eye-01-before.webp"
+                                            alt="目の下の脂肪除去の施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-under-eye-01-after.webp"
+                                            alt="目の下の脂肪除去の施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">UNDER EYE</p>
+                                    <h3 class="case-gallery__name">クマ取り</h3>
+                                    <p class="case-gallery__treatment">目の下の脂肪除去</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="under-eye">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-under-eye-02-before.webp"
+                                            alt="クマ取りスタンダードの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-under-eye-02-after.webp"
+                                            alt="クマ取りスタンダードの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">UNDER EYE</p>
+                                    <h3 class="case-gallery__name">クマ取り</h3>
+                                    <p class="case-gallery__treatment">クマ取り スタンダード</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="under-eye">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-under-eye-03-before.webp"
+                                            alt="脂肪注入併用クマ取りの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-under-eye-03-after.webp"
+                                            alt="脂肪注入併用クマ取りの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">UNDER EYE</p>
+                                    <h3 class="case-gallery__name">クマ取り</h3>
+                                    <p class="case-gallery__treatment">脂肪注入併用</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="under-eye">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-under-eye-04-before.webp"
+                                            alt="クマ取りプレミアムの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-under-eye-04-after.webp"
+                                            alt="クマ取りプレミアムの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">UNDER EYE</p>
+                                    <h3 class="case-gallery__name">クマ取り</h3>
+                                    <p class="case-gallery__treatment">クマ取り プレミアム</p>
+                                </div>
+                            </article>
+
+                            <!-- ==========================
+                        LIP Cカールリップ
+                        ========================== -->
+
+                            <article class="case-gallery__card" data-category="lip">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lip-01-before.webp"
+                                            alt="Cカールリップの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lip-01-after.webp"
+                                            alt="Cカールリップの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">LIP</p>
+                                    <h3 class="case-gallery__name">Cカールリップ</h3>
+                                    <p class="case-gallery__treatment">ヒアルロン酸注入</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="lip">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lip-02-before.webp"
+                                            alt="リップヒアルロン酸の施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lip-02-after.webp"
+                                            alt="リップヒアルロン酸の施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">LIP</p>
+                                    <h3 class="case-gallery__name">Cカールリップ</h3>
+                                    <p class="case-gallery__treatment">ボリフト 1cc</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="lip">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lip-03-before.webp"
+                                            alt="唇と口角のヒアルロン酸注入前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lip-03-after.webp"
+                                            alt="唇と口角のヒアルロン酸注入後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">LIP</p>
+                                    <h3 class="case-gallery__name">Cカールリップ</h3>
+                                    <p class="case-gallery__treatment">唇＋口角ヒアルロン酸</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="lip">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lip-04-before.webp"
+                                            alt="人中短縮リップの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lip-04-after.webp"
+                                            alt="人中短縮リップの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">LIP</p>
+                                    <h3 class="case-gallery__name">Cカールリップ</h3>
+                                    <p class="case-gallery__treatment">人中短縮デザイン</p>
+                                </div>
+                            </article>
+
+                            <!-- ==========================
+                        SKIN 美肌治療
+                        ========================== -->
+
+                            <article class="case-gallery__card" data-category="skin">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-skin-01-before.webp"
+                                            alt="フォトフェイシャルの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-skin-01-after.webp"
+                                            alt="フォトフェイシャルの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">SKIN</p>
+                                    <h3 class="case-gallery__name">美肌治療</h3>
+                                    <p class="case-gallery__treatment">フォトフェイシャル</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="skin">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-skin-02-before.webp"
+                                            alt="ピコトーニングの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-skin-02-after.webp"
+                                            alt="ピコトーニングの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">SKIN</p>
+                                    <h3 class="case-gallery__name">美肌治療</h3>
+                                    <p class="case-gallery__treatment">ピコトーニング</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="skin">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-skin-03-before.webp"
+                                            alt="ダーマペンの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-skin-03-after.webp"
+                                            alt="ダーマペンの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">SKIN</p>
+                                    <h3 class="case-gallery__name">美肌治療</h3>
+                                    <p class="case-gallery__treatment">ダーマペン</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="skin">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-skin-04-before.webp"
+                                            alt="水光注射の施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-skin-04-after.webp"
+                                            alt="水光注射の施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">SKIN</p>
+                                    <h3 class="case-gallery__name">美肌治療</h3>
+                                    <p class="case-gallery__treatment">水光注射</p>
+                                </div>
+                            </article>
+
+                            <!-- ==========================
+                        FACE LINE 小顔
+                        ========================== -->
+
+                            <article class="case-gallery__card" data-category="face-line">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-face-line-01-before.webp"
+                                            alt="エラボトックスの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-face-line-01-after.webp"
+                                            alt="エラボトックスの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">FACE LINE</p>
+                                    <h3 class="case-gallery__name">小顔</h3>
+                                    <p class="case-gallery__treatment">エラボトックス</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="face-line">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-face-line-02-before.webp"
+                                            alt="顎下脂肪吸引の施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-face-line-02-after.webp"
+                                            alt="顎下脂肪吸引の施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">FACE LINE</p>
+                                    <h3 class="case-gallery__name">小顔</h3>
+                                    <p class="case-gallery__treatment">顎下脂肪吸引</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="face-line">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-face-line-03-before.webp"
+                                            alt="頬脂肪吸引の施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-face-line-03-after.webp"
+                                            alt="頬脂肪吸引の施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">FACE LINE</p>
+                                    <h3 class="case-gallery__name">小顔</h3>
+                                    <p class="case-gallery__treatment">頬脂肪吸引</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="face-line">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-face-line-04-before.webp"
+                                            alt="インモードの施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-face-line-04-after.webp"
+                                            alt="インモードの施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">FACE LINE</p>
+                                    <h3 class="case-gallery__name">小顔</h3>
+                                    <p class="case-gallery__treatment">インモード</p>
+                                </div>
+                            </article>
+
+                            <!-- ==========================
+                        LIFT 糸リフト
+                        ========================== -->
+
+                            <article class="case-gallery__card" data-category="lift">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lift-01-before.webp"
+                                            alt="MIRAIリフト4本の施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lift-01-after.webp"
+                                            alt="MIRAIリフト4本の施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">LIFT</p>
+                                    <h3 class="case-gallery__name">糸リフト</h3>
+                                    <p class="case-gallery__treatment">MIRAIリフト 4本</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="lift">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lift-02-before.webp"
+                                            alt="MIRAIリフト6本の施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lift-02-after.webp"
+                                            alt="MIRAIリフト6本の施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">LIFT</p>
+                                    <h3 class="case-gallery__name">糸リフト</h3>
+                                    <p class="case-gallery__treatment">MIRAIリフト 6本</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="lift">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lift-03-before.webp"
+                                            alt="プラチナリフト6本の施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lift-03-after.webp"
+                                            alt="プラチナリフト6本の施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">LIFT</p>
+                                    <h3 class="case-gallery__name">糸リフト</h3>
+                                    <p class="case-gallery__treatment">プラチナリフト 6本</p>
+                                </div>
+                            </article>
+
+                            <article class="case-gallery__card" data-category="lift">
+                                <div class="case-gallery__images">
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lift-04-before.webp"
+                                            alt="プラチナリフト8本の施術前"
+                                        />
+                                        <figcaption class="case-gallery__label">BEFORE</figcaption>
+                                    </figure>
+
+                                    <figure class="case-gallery__image-box">
+                                        <img
+                                            class="case-gallery__image"
+                                            src="images/case-lift-04-after.webp"
+                                            alt="プラチナリフト8本の施術後"
+                                        />
+                                        <figcaption class="case-gallery__label">AFTER</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="case-gallery__body">
+                                    <p class="case-gallery__category">LIFT</p>
+                                    <h3 class="case-gallery__name">糸リフト</h3>
+                                    <p class="case-gallery__treatment">プラチナリフト 8本</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button
+                type="button"
+                class="case-category-return"
+                aria-label="症例カテゴリーを選び直す"
+            >
+                症例を選ぶ
+            </button>
+
+            <!-- ==========================
+            RESERVATION
+            ========================== -->
+            <section class="reservation" id="reservation">
+                <div class="reservation__inner">
+                    <p class="reservation__eyebrow">RESERVATION</p>
+
+                    <h2 class="reservation__title">無料カウンセリング予約</h2>
+
+                    <p class="reservation__text">
+                        一人ひとりのお悩みに合わせて、<br />
+                        最適な施術をご提案いたします。<br />
+                        まずはお気軽にご相談ください。
+                    </p>
+
+                    <a href="reservation.html" class="reservation__button">
+                        WEB予約はこちら
+                        <span class="reservation__arrow">→</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <h2 class="footer__clinic-name">MIRAI beauty clinic</h2>
+
+                    <p class="footer__copy">美しさのその先へ。</p>
+                </div>
+
+                <nav class="footer__nav" aria-label="フッターナビゲーション">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="mirai.html" class="footer__link">HOME</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="treatment.html" class="footer__link">TREATMENT</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="price.html" class="footer__link">PRICE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="case.html" class="footer__link">CASE</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="doctor.html" class="footer__link">DOCTOR</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="clinic.html" class="footer__link">CLINIC</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="access.html" class="footer__link">ACCESS</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="reservation.html" class="footer__link">WEB予約</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__info">
+                    <p class="footer__address">
+                        〒060-0001<br />
+                        北海道札幌市中央区○○1丁目2-3
+                    </p>
+
+                    <p class="footer__tel">TEL：011-123-4567</p>
+
+                    <p class="footer__time">診療時間 10:00〜19:00（不定休）</p>
+                </div>
+
+                <small class="footer__copyright">
+                    &copy; 2026 MIRAI beauty clinic. All Rights Reserved.
+                </small>
+            </div>
+        </footer>
+        <script src="./js/mirai.js"></script>
+    </body>
+</html>
