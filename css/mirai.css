@@ -876,7 +876,7 @@ FAQ
     font-size: clamp(0.88rem, 2.3vw, 1rem);
 }
 
-.faq__item[open] .faq__answer {__info
+.faq__item[open] .faq__answer {
     animation: faqFade 0.35s ease;
 }
 
